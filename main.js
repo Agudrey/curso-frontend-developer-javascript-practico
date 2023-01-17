@@ -11,7 +11,7 @@ const cardsContainer = document.querySelector('.cards-container');
 // ---------------Funciones del navbar----------------------
 
 menuEmail.addEventListener('click', toggleDesktopMenu);
-burguerIcon.addEventListener('click', toggleMobilepMenu);
+burguerIcon.addEventListener('click', toggleMobileMenu);
 cartIcon.addEventListener('click', toggleShoppingCart);
 
 
@@ -26,7 +26,7 @@ function toggleDesktopMenu(){
 };
 
 
-function toggleMobilepMenu(){
+function toggleMobileMenu(){
   const isShoppingCartClosed = shoppingCart.classList.contains('inactive')
 
   if(!isShoppingCartClosed){
@@ -73,9 +73,25 @@ class Products{
 
 const productList = [];
 
-productList.push(new Products('bike', '200', 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'));
-productList.push(new Products('compu', '242300', 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'));
-productList.push(new Products('car', '20235530', 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'));
+productList.push(new Products('Bike', '200', 'https://cdn.shopify.com/s/files/1/0570/8021/7797/products/2021_BREEZER_MIDTOWN_15_SATIN_SILVER_FRONT_1024x1024.jpg?v=1641399739'));
+
+productList.push(new Products('Macbook', '1000', 'https://cdn.shopify.com/s/files/1/0604/8373/1606/products/IMG-171890_823x.jpg?v=1660440284'));
+
+productList.push(new Products('Car', '20000', 'https://media.zigcdn.com/media/model/2021/Nov/q5-2021-1_360x240.jpg'));
+
+productList.push(new Products('Bike', '200', 'https://cdn.shopify.com/s/files/1/0570/8021/7797/products/2021_BREEZER_MIDTOWN_15_SATIN_SILVER_FRONT_1024x1024.jpg?v=1641399739'));
+
+productList.push(new Products('Macbook', '1000', 'https://cdn.shopify.com/s/files/1/0604/8373/1606/products/IMG-171890_823x.jpg?v=1660440284'));
+
+productList.push(new Products('Car', '20000', 'https://media.zigcdn.com/media/model/2021/Nov/q5-2021-1_360x240.jpg'));
+
+productList.push(new Products('Bike', '200', 'https://cdn.shopify.com/s/files/1/0570/8021/7797/products/2021_BREEZER_MIDTOWN_15_SATIN_SILVER_FRONT_1024x1024.jpg?v=1641399739'));
+
+productList.push(new Products('Macbook', '1000', 'https://cdn.shopify.com/s/files/1/0604/8373/1606/products/IMG-171890_823x.jpg?v=1660440284'));
+
+productList.push(new Products('Car', '20000', 'https://media.zigcdn.com/media/model/2021/Nov/q5-2021-1_360x240.jpg'));
+
+productList.push(new Products('Bike', '200', 'https://cdn.shopify.com/s/files/1/0570/8021/7797/products/2021_BREEZER_MIDTOWN_15_SATIN_SILVER_FRONT_1024x1024.jpg?v=1641399739'));
 
 
 function renderProducts(arr){
